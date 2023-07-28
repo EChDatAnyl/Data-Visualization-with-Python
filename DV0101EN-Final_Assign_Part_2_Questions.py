@@ -84,7 +84,7 @@ def update_output_container(input_year, selected_statistics):
             html.Div(className='chart-item', children=[html.Div(children=R_chart1), html.Div(children=R_chart2)], style={'display': 'flex'}),
             html.Div(className='chart-item', children=[html.Div(children=R_chart3), html.Div(children=R_chart4)], style={'display': 'flex'})
         ]
-    elif input_year and selected_statistics == 'Yearly Statistics':
+    elif (input_year and selected_statistics=='Yearly Statistics'):
         yearly_data = data[data['Year'] == input_year]
         # Code to create plots for yearly statistics
         return [
